@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: flex;
+}
+
+h1, h2, h3, p, a {
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
