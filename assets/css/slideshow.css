@@ -1,0 +1,38 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+}
+
+.slideshow .slider {
+    transition: 400ms;
+}
+
+.slideshow .slider div {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+.slideshow .dotContainer {
+    position: absolute;
+    bottom: 10px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.slideshow .dotContainer input {
+    height: 12px;
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 200ms;
+    border-radius: 50%;
+    margin: 0 7px;
+    -webkit-appearance: none;
+}
+
+.slideshow .dotContainer input:hover, .slideshow .dotContainer input:checked {
+    background-color: rgba(255, 255, 255, 1);
+}

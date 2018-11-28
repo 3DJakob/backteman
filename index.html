@@ -7,15 +7,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/default.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/slideshow.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
     <script src="./assets/js/main.js"></script>
 </head>
-<body onscroll="scroll()">
+<!-- <body onresize="setBgHeight()" onscroll="scroll()" onload="init()"> -->
+<body onscroll="scroll()" onload="init()">
     <div class="home">
         <div class="bg behind"></div>
         <div class="bg"></div>
         <div class="overlay"></div>
         <header>
-            <img src="./assets/img/tooth.svg" alt="tooth">
+            <i class="fas fa-lg fa-tooth"></i>
             <a href="">Pris</a>
             <a href="">Behandlingar</a>
             <a href="">Kontakt</a>
@@ -48,8 +52,68 @@
             </a>
         </div>
     </div>
-    <div class="price">
-        <p>Lorem ipsum dolor amet fixie roof party XOXO listicle PBR&B iPhone umami vegan lumbersexual. Echo park bespoke humblebrag godard franzen snackwave selvage shaman. Fixie shaman post-ironic yr echo park woke activated charcoal umami butcher, occupy squid keffiyeh pug. Next level subway tile affogato post-ironic lumbersexual. Post-ironic austin knausgaard, cloud bread affogato tumeric godard succulents photo booth banjo.</p>
+    <div class="mainPage">
+        <div class="openingHours"></div>
+        <h2>Priser</h2>
+        <div class="priceTable">
+            <div>
+                <p>Undersökning</p>
+                <p>900 kr</p>
+            </div>
+            <div>
+                <p>Framtandsfyllnad</p>
+                <p>1350 kr</p>
+            </div>
+            <div>
+                <p>Fyllning molar</p>
+                <p>1700 kr</p>
+            </div>
+            <div>
+                <p>Krona</p>
+                <p>6300 / 7300 kr</p>
+            </div>
+            <div>
+                <p>Blekning</p>
+                <p>4500 kr</p>
+            </div>
+        </div>
+        <div class="divider">
+            <div></div>
+            <i class="fas fa-lg fa-tooth"></i>
+            <div></div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h2>Vårt arbetssätt</h2>
+                <img src="./assets/img/cards/arbetsatt.jpg" alt="">
+                <p>Vi erbjuder dig tandvård i en lugn och trevlig miljö belägen mitt i centrum. För oss är det viktigt med patienten i centrum. Vården bedrivs med senaste utrustning och teknik. Stor vikt läggs vid vidareutbildning av vår personal.</p>
+            </div>
+            <div class="card">
+                <h2>Blekning</h2>
+                <img src="./assets/img/cards/blekning.jpg" alt="">
+                <p>Vi erbjuder hemblekning, 1 behandling omfattar 8 blektillfällen.</p>
+            </div>
+            <div class="card">
+                <h2>Barntandvård</h2>
+                <img src="./assets/img/cards/barn.jpg" alt="">
+                <p>Visste du att barn (3-22 år) skrivna i Västmanlands län har fri tandvård även hos privattandläkare? Vården är fri till och med det år barnen fyller 22 år. Ring om du har funderingar, välkomna!</p>
+            </div>
+            <div class="card">
+                <h2>OPG Röntgen</h2>
+                <img src="./assets/img/cards/opg.jpg" alt="">
+                <p>Vi har en OPG Röntgenapparat för bästa möjliga diagnostik.</p>
+            </div>
+        </div>
+        <p class="info">Vi erbjuder alla behandlingar inkl implantant, estetisk tandvård och tandblekning. Vid protetiska behandlingar använder vi scanner istället för att ta avtryck.</p>
+        <div class="slideshow">
+            <div class="slider">
+                <div data-image="./assets/img/slideshow/1.jpg"></div>
+                <div data-image="./assets/img/slideshow/2.jpg"></div>
+                <div data-image="./assets/img/slideshow/3.jpg"></div>
+                <div data-image="./assets/img/slideshow/4.jpg"></div>
+                <div data-image="./assets/img/slideshow/5.jpg"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

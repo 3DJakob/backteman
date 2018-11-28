@@ -8,6 +8,7 @@
     min-height: calc(100vh - 100px);
     overflow: hidden;
     max-width: 960px;
+    position: relative;
 }
 
 .home .bg, .home .overlay {
@@ -62,11 +63,11 @@ header a:hover {
     background-color: rgba(255, 255, 255, 0.1)
 }
 
-header img {
+header i {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 30px;
+    top: 18px;
+    left: 18px;
+    color: #fff;
 }
 
 .home .info {
@@ -115,10 +116,6 @@ header img {
     }
 }
 
-.price {
-    background-color: #fff;
-}
-
 .icons {
     display: flex;
     flex-wrap: wrap;
@@ -149,5 +146,72 @@ header img {
 
 .icons a p {
     margin: 0 10px 10px;
+    text-align: center;
+}
+
+.mainPage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100vw;
+}
+
+.mainPage .openingHours {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.mainPage .openingHours p {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.mainPage .priceTable {
+    flex-direction: column;
+    max-width: 600px;
+    width: calc(100vw - 20px);
+}
+
+.mainPage .priceTable div {
+    border-bottom: 1px solid #999;
+}
+
+.mainPage .priceTable div p {
+    margin: 10px 0;
+}
+
+.mainPage .priceTable div :last-child {
+    margin-left: auto;
+}
+
+.mainPage .divider {
+    width: 100%;
+    align-items: center;
+    margin: 60px 0;
+    max-width: 960px;
+}
+
+.mainPage .divider div {
+    flex: 1;
+    height: 1px;
+    margin: 0 20px;
+    justify-content: center;
+    background-color: #666;
+}
+
+.mainPage .divider i {
+    color: #333;
+}
+
+.mainPage .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainPage p {
+    max-width: 500px;
     text-align: center;
 }

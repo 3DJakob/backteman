@@ -16,4 +16,8 @@
     .icons {
         position: initial;
     }
+
+    .mainPage .openingHours {
+        flex-direction: column;
+    }
 }
