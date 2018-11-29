@@ -2,6 +2,16 @@
   a:hover { color: inherit; }
 }
 
+@media only screen and (max-width: 400px) {
+    .card {
+        max-width: calc(100vw - 60px) !important;
+        width: calc(100vw - 60px) !important;
+    }
+    header i {
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     header a {
         width: 33%;

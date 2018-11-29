@@ -266,9 +266,9 @@ header i {
     text-align: center;
 }
 
-.squares div  img {
-    width: 150px;
-    height: 150px;
+.squares div img {
+    width: 100px;
+    height: 100px;
 }
 
 .squares div  img:last-of-type {
