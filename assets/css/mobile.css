@@ -31,6 +31,10 @@
         flex-direction: column;
     }
 
+    .slideshow {
+        height: 200px !important;
+    }
+
     .squares {
         flex-direction: column;
     }
