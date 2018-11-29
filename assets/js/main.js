@@ -78,7 +78,6 @@ const initiateSlideshow = () => {
     container.classList.add('dotContainer')
     const id = guid()
     for (let i = 0; i < slideshow.children[0].children.length; i++) {
-      // const bullet = document.createElement('div')
       const bullet = document.createElement('input')
       bullet.type = 'radio'
       bullet.name = id

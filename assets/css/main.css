@@ -86,9 +86,6 @@ header i {
 }
 
 .home .info a {
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 3px;
     transition: 200ms;
     margin-bottom: 20px;
 }
@@ -214,4 +211,75 @@ header i {
 .mainPage p {
     max-width: 500px;
     text-align: center;
+}
+
+.cards.people h2 {
+    margin-top: 10px;
+}
+
+.cards.people p {
+    margin-top: 0;
+}
+
+.cards.people .card {
+    background-color: #fff;
+}
+
+.cards.people .card:hover {
+    transform: scale(1);
+}
+
+
+.row .button.blue {
+    margin: 15px;
+}
+
+.squares {
+    margin-top: 40px;
+}
+
+.squares div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vw;
+    width: 50vw;
+}
+
+.squares div:last-of-type {
+    min-height: calc(50vw - 80px);
+    width: calc(50vw - 80px);
+    padding: 40px;
+}
+
+.squares div iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.squares div:last-of-type {
+    background-color: #668198;
+}
+
+.squares div * {
+    color: #fff !important;
+    text-align: center;
+}
+
+.squares div  img {
+    width: 150px;
+    height: 150px;
+}
+
+.squares div  img:last-of-type {
+    height: 51px;
+    width: 151px;
+}
+
+.squares div a:first-of-type {
+    font-size: 36px;
+}
+
+.squares div p a {
+    font-size: initial !important;
 }

@@ -20,33 +20,33 @@
         <div class="overlay"></div>
         <header>
             <i class="fas fa-lg fa-tooth"></i>
-            <a href="">Pris</a>
-            <a href="">Behandlingar</a>
-            <a href="">Kontakt</a>
+            <a href="#price" class="smooth-scroll">Pris</a>
+            <a href="#treatments" class="smooth-scroll">Behandlingar</a>
+            <a href="#contact" class="smooth-scroll">Kontakt</a>
         </header>
         <div class="info">
             <h1>Tandläkare Backteman</h1>
             <h2>Välkommen</h2>
             <p>Som ny patient är du välkommen att ringa och boka en tid för en första undersökning. Du kan också kontakta oss nedan. Var vänlig ange ditt namn, adress, telefonnummer. Vi tar kontakt med dig inom några dagar och så kommer vi överens om en tid.</p>
             <div class="buttons">
-                <a href="">Mail för tidsbokning</a>
-                <a href="">Ring för tidsbokning</a>
+                <a href="mailto:peter.backteman@gmail.com" class="button">Mail för tidsbokning</a>
+                <a href="tel:021-419550" class="button">Ring för tidsbokning</a>
             </div>
         </div>
         <div class="icons">
-            <a>
+            <a href="#work-method" class="smooth-scroll">
                 <img src="./assets/img/icons/arbetsatt.svg" alt="arbetsätt">
                 <p>Vårt arbetssätt</p>
             </a>
-            <a>
+            <a href="#bleaching" class="smooth-scroll">
                 <img src="./assets/img/icons/blekning.svg" alt="blekning">
                 <p>Blekning</p>
             </a>
-            <a>
+            <a href="#kids" class="smooth-scroll">
                 <img src="./assets/img/icons/barn.svg" alt="barn">
                 <p>Barntandvård</p>
             </a>
-            <a>
+            <a href="#xray" class="smooth-scroll">
                 <img src="./assets/img/icons/rontgen.svg" alt="röntgen">
                 <p>OPG Röntgen</p>
             </a>
@@ -54,7 +54,7 @@
     </div>
     <div class="mainPage">
         <div class="openingHours"></div>
-        <h2>Priser</h2>
+        <h2 id="price">Priser</h2>
         <div class="priceTable">
             <div>
                 <p>Undersökning</p>
@@ -82,23 +82,23 @@
             <i class="fas fa-lg fa-tooth"></i>
             <div></div>
         </div>
-        <div class="cards">
+        <div class="cards" id="treatments">
             <div class="card">
-                <h2>Vårt arbetssätt</h2>
+                <h2 id="work-method">Vårt arbetssätt</h2>
                 <img src="./assets/img/cards/arbetsatt.jpg" alt="">
                 <p>Vi erbjuder dig tandvård i en lugn och trevlig miljö belägen mitt i centrum. För oss är det viktigt med patienten i centrum. Vården bedrivs med senaste utrustning och teknik. Stor vikt läggs vid vidareutbildning av vår personal.</p>
             </div>
-            <div class="card">
+            <div id="bleaching" class="card">
                 <h2>Blekning</h2>
                 <img src="./assets/img/cards/blekning.jpg" alt="">
                 <p>Vi erbjuder hemblekning, 1 behandling omfattar 8 blektillfällen.</p>
             </div>
-            <div class="card">
+            <div id="kids" class="card">
                 <h2>Barntandvård</h2>
                 <img src="./assets/img/cards/barn.jpg" alt="">
                 <p>Visste du att barn (3-22 år) skrivna i Västmanlands län har fri tandvård även hos privattandläkare? Vården är fri till och med det år barnen fyller 22 år. Ring om du har funderingar, välkomna!</p>
             </div>
-            <div class="card">
+            <div id="xray" class="card">
                 <h2>OPG Röntgen</h2>
                 <img src="./assets/img/cards/opg.jpg" alt="">
                 <p>Vi har en OPG Röntgenapparat för bästa möjliga diagnostik.</p>
@@ -114,6 +114,40 @@
                 <div data-image="./assets/img/slideshow/5.jpg"></div>
             </div>
         </div>
+        <h1>Välkommen!</h1>
+        <div class="cards people">
+            <div class="card">
+                <img src="./assets/img/profile/peter.jpg" alt="peter">
+                <h2>Peter Backteman</h2>
+                <p>Tandläkare</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/profile/veronica.jpg" alt="veronica">
+                <h2>Veronica Östlund</h2>
+                <p>Tandsköterska</p>
+            </div>
+        </div>
+        <div class="row">
+            <a href="" class="button blue">Mail för tidsbokning</a>
+            <a href="" class="button blue">Ring för tidsbokning</a>
+        </div>
+        <div class="squares">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2018.4595936837482!2d16.539862451031333!3d59.60871049554357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e613fa1b6c2af%3A0x676d0802a6fb38f5!2sBacktemans+Tand+%26+Dans+AB!5e0!3m2!1ssv!2sse!4v1543522558780" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="contact">
+                <img src="./assets/img/tooth.svg" alt="tooth">
+                <p>Västerås | 722 12</p>
+                <a href="tel:021-419550">021-419550</a>
+                <a href="mailto:peter.backteman@gmail.com">peter.backteman@gmail.com</a>
+                <p>Journummer helger mellan kl 9-11. Endast om du är patient hos oss. <a href="tel:070-247 95 30">070-247 95 30</a></p>
+                <img src="./assets/img/icons/cert.jpg" alt="cert">
+            </div>
+        </div>
+        <footer>
+            Hemsidan presenteras med ❤️ av Unga Utvecklare
+        </footer>
     </div>
+    <script src="./assets/js/smooth-scoll.js"></script>
 </body>
 </html>

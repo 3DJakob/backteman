@@ -9,7 +9,7 @@ div {
     display: flex;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, footer {
     font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
 }
@@ -21,6 +21,24 @@ h1, h2, h3 {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    transition: 200ms;
+}
+
+.button.blue {
+    color: #668198;
+    border: 1px solid #668198;
+}
+
+.button.blue:hover {
+    color: #fff;
+    background-color: #668198;
 }
 
 .card {
@@ -57,3 +75,13 @@ a {
     font-size: 12px;
     font-weight: inherit;
 }
+
+footer {
+    color: #666;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

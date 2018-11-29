@@ -20,4 +20,26 @@
     .mainPage .openingHours {
         flex-direction: column;
     }
+
+    .squares {
+        flex-direction: column;
+    }
+
+    .squares div {
+        width: 100vw !important;
+        height: auto;
+        min-height: 0;
+    }
+
+    .squares div:last-of-type {
+        width: calc(100vw - 80px) !important;
+    }
+
+    .squares div iframe {
+        height: 400px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
