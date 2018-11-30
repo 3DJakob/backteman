@@ -9,16 +9,16 @@ const scroll = () => {
 const init = () => {
   renderDates()
   initiateSlideshow()
-  // setBgHeight()
+  setBgHeight()
 }
 
-// const setBgHeight = () => {
-//   const height = document.querySelector('.home').scrollHeight
-//   const elements = document.querySelectorAll('.bg')
-//   elements.forEach((element) => {
-//     element.style.height = height + 100 + 'px'
-//   })
-// }
+const setBgHeight = () => {
+  const height = document.querySelector('.home').scrollHeight
+  const elements = document.querySelectorAll('.bg')
+  elements.forEach((element) => {
+    element.style.height = height + 100 + 'px'
+  })
+}
 
 const renderDates = () => {
   const dates = [

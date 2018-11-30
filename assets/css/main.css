@@ -11,12 +11,12 @@
     position: relative;
 }
 
-.home .bg, .home .overlay {
+.home .bg {
     position: fixed;
-    top: -50px;
-    bottom: -50px;
-    left: -50px;
-    right: -50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: height 200ms;
 }
 
 .home .bg {
@@ -30,12 +30,6 @@
 
 .home .bg.behind {
     filter: blur(0);
-}
-
-.home .overlay {
-    z-index: -1;
-    background-color: #7EC1FF;
-    opacity: 0.42;
 }
 
 header {
