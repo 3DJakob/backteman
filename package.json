@@ -1,5 +1,5 @@
 {
-  "name": "bakteman",
+  "name": "backteman",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3DJakob/bakteman.git"
+    "url": "git+https://github.com/3DJakob/backteman.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/3DJakob/bakteman/issues"
+    "url": "https://github.com/3DJakob/backteman/issues"
   },
-  "homepage": "https://github.com/3DJakob/bakteman#readme"
+  "homepage": "https://github.com/3DJakob/backteman#readme"
 }
