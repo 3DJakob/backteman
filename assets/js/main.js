@@ -8,7 +8,8 @@ const scroll = () => {
 
 const init = () => {
   renderDates()
-  initiateSlideshow()
+  initiateSlideshows()
+
   setBgHeight()
 }
 
@@ -61,7 +62,7 @@ function guid () {
   return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4()
 }
 
-const initiateSlideshow = () => {
+const initiateSlideshows = () => {
   const populateSlideshow = (slideshow) => {
     const slider = slideshow.children[0]
     let width = 0
@@ -97,8 +98,26 @@ const initiateSlideshow = () => {
     populateSlideshow(slideshow)
     populateButtons(slideshow)
   })
+  repeatSlideshows(slideshows)
 }
 
 const goToSlide = (slideshow, number) => {
   slideshow.children[0].style.transform = 'translateX(' + -number * slideshow.children[0].children[0].scrollWidth + 'px)'
+}
+
+const repeatSlideshows = (slideshows) => {
+  slideshows.forEach((slideshow) => {
+    const children = [].slice.call(slideshow.children[1].children)
+    let current
+    for (let i = 0; i < children.length; i++) {
+      const element = children[i]
+      if (element.checked) {
+        current = i
+      }
+    }
+    current += 1
+    if (current === children.length) { current = 0 }
+    children[current].click()
+  })
+  window.setTimeout(function () { repeatSlideshows(slideshows) }, 4000)
 }
