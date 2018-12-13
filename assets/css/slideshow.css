@@ -31,6 +31,7 @@
     border-radius: 50%;
     margin: 0 7px;
     -webkit-appearance: none;
+    border: 0;
 }
 
 .slideshow .dotContainer input:hover, .slideshow .dotContainer input:checked {

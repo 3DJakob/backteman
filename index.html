@@ -134,9 +134,14 @@
                 <p>Tandsköterska</p>
             </div>
         </div>
-        <div class="row">
-            <a href="" class="button blue">Mail för tidsbokning</a>
-            <a href="" class="button blue">Ring för tidsbokning</a>
+        <div class="contact">
+          <h2>Kontakt</h2>
+          <div class="row">
+            <input type="text" placeholder="Namn" autocomplete="name" id="name">
+            <input type="digits" placeholder="Telefon" autocomplete="tel" id="phone">
+          </div>
+          <textarea cols="30" rows="10" placeholder="Meddelande" id="msg"></textarea>
+          <a onclick="sendEmail()" class="button blue">Skicka</a>
         </div>
         <div class="squares">
             <div>

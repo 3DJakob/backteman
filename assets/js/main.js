@@ -121,3 +121,17 @@ const repeatSlideshows = (slideshows) => {
   })
   window.setTimeout(function () { repeatSlideshows(slideshows) }, 4000)
 }
+
+const sendEmail = () => {
+  const name = document.querySelector('#name').value
+  const phone = document.querySelector('#phone').value
+  const msg = document.querySelector('#msg').value
+  let endString = ''
+  if (name) {
+    endString = 'Med vänliga hälsningar ' + name
+    if (phone) {
+      endString += ' ' + phone
+    }
+  }
+  window.location.href = 'mailto:peter.backteman@gmail.com?subject=' + '' + '&body=' + msg + '%0D%0A %0D%0A' + endString
+}

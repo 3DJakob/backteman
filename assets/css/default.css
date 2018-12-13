@@ -23,6 +23,12 @@ a {
     color: #fff;
 }
 
+input, textarea {
+  margin: 0;
+  border: 1px solid #668198;
+  border-radius: 3px;
+}
+
 .button {
     padding: 10px 20px;
     border: 1px solid #fff;
@@ -85,4 +91,39 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.row {
+  flex-direction: row;
+}
+
+
+.contact {
+  flex-direction: column;
+  padding: 20px;
+  width: calc(100vw - 40px);
+  max-width: 600px;
+}
+
+.contact input, .contact textarea {
+  flex: 1;
+  padding: 10px;
+}
+
+.contact input:first-of-type {
+  margin-right: 5px;
+}
+
+.contact input:last-of-type {
+  margin-left: 5px;
+}
+
+.contact textarea {
+  height: 200px;
+  margin: 20px 0;
+}
+
+.contact a {
+  align-self: flex-end;
+}
+

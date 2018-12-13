@@ -60,6 +60,10 @@
     }
 
     .row {
-        flex-direction: column;
+        flex-direction: column !important;
+    }
+
+    .contact .row input {
+      margin: 10px 0;
     }
 }
