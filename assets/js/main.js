@@ -23,10 +23,10 @@ const setBgHeight = () => {
 
 const renderDates = () => {
   const dates = [
-    { day: 'Måndag', from: '7:30', to: '11:00' },
-    { day: 'Tisdag', from: '9:00', to: '17:30' },
-    { day: 'Onsdag', from: '7:30', to: '11:00' },
-    { day: 'Torsdag', from: '9:00', to: '17:30' },
+    { day: 'Måndag', from: '9:00', to: '17:30' },
+    { day: 'Tisdag', from: '7:30', to: '11:00' },
+    { day: 'Onsdag', from: '9:00', to: '17:30' },
+    { day: 'Torsdag', from: '7:30', to: '11:00' },
     { day: 'Fredag', from: '', to: '' }
   ]
 
