@@ -9,8 +9,8 @@ const scroll = () => {
 const init = () => {
   renderDates()
   initiateSlideshows()
-
   setBgHeight()
+  displaySemester()
 }
 
 const setBgHeight = () => {
@@ -134,4 +134,25 @@ const sendEmail = () => {
     }
   }
   window.location.href = 'mailto:peter.backteman@gmail.com?subject=' + '' + '&body=' + msg + '%0D%0A %0D%0A' + endString
+}
+
+const displaySemester = () => {
+  const heading = document.querySelector('#heading')
+  const text = document.querySelector('#txt')
+  const date = new Date()
+  const month = date.getMonth()
+
+  if (month == 5 || month == 6 || month == 7) {
+    heading.innerHTML = 'Sommarstängt!'
+    text.innerHTML = 'Kliniken har sommarstängt v 26-27 samt v 29-32. Akuta ärenden ring <a style="color: black" href="tel:021-41 95 50">021-41 95 50</a> för hänvisning. Trevlig sommar!'
+  } else if (month == 11 || month == 0) {
+    heading.innerHTML = 'Julstängt!'
+    text.innerHTML = 'Kliniken har julstängt 24/12 - 11/1. Akuta ärenden ring <a style="color: black" href="tel:021-41 95 50">021-41 95 50</a> för hänvisning. God jul och gott nytt år!'
+  } else {
+    heading.innerHTML = ''
+    text.innerHTML = ''
+
+    heading.style.display = 'none'
+    text.style.display = 'none'
+  }
 }
