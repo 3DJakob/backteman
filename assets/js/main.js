@@ -53,8 +53,8 @@ const renderDates = () => {
   targets.forEach(target => { renderDate(target) })
 }
 
-function guid () {
-  function s4 () {
+function guid() {
+  function s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
       .toString(16)
       .substring(1)
@@ -147,7 +147,7 @@ const displaySemester = () => {
     text.innerHTML = 'Kliniken har sommarstängt v 26-27 samt v 29-32. Akuta ärenden ring <a style="color: black" href="tel:021-41 95 50">021-41 95 50</a> för hänvisning. Trevlig sommar!'
   } else if (month == 11 || month == 0) {
     heading.innerHTML = 'Julstängt!'
-    text.innerHTML = 'Kliniken har julstängt 24/12 - 11/1. Akuta ärenden ring <a style="color: black" href="tel:021-41 95 50">021-41 95 50</a> för hänvisning. God jul och gott nytt år!'
+    text.innerHTML = 'Kliniken har julstängt 24/12 - 16/1. Akuta ärenden ring <a style="color: black" href="tel:021-41 95 50">021-41 95 50</a> för hänvisning. God jul och gott nytt år!'
   } else {
     heading.innerHTML = ''
     text.innerHTML = ''
